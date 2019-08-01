@@ -137,7 +137,7 @@ Clear-Host
     Write-Host " D. Florida"
     Write-Host
     $question5 = Read-Host " Type the letter representing the correct answer and press the Enter key"
-}## Clear the Windows command console screen
+}## Clear the Windows command console screen
 Clear-Host
 
 Write-Host
@@ -145,16 +145,16 @@ Write-Host " OK, now press the Enter key to see how you did."
 
 
 ## Pause script execution and wait for the player to press the Enter key
-Read-Host## Clear the Windows command console screen
-
-Clear-Host
+Read-HostClear-Host
 
 ## Grade the answers for each quiz question
 if ($question1 -eq "b") { $noCorrect++ } #The answer to question 1 is "B"
 if ($question2 -eq "d") { $noCorrect++ } #The answer to question 2 is "D"
 if ($question3 -eq "c") { $noCorrect++ } #The answer to question 3 is "C"
 if ($question4 -eq "c") { $noCorrect++ } #The answer to question 4 is "C"
-if ($question5 -eq "d") { $noCorrect++ } #The answer to question 5 is "D"## Assign a ranking based on quiz score
+if ($question5 -eq "d") { $noCorrect++ } #The answer to question 5 is "D"
+
+## Assign a ranking based on quiz score
 if ($noCorrect -eq 0) {
     Write-Host    Write-Host " You did not get any questions correct."
     Write-Host
@@ -207,27 +207,13 @@ Read-Host
 
 Clear-Host
 
-Write-Host
-Write-Host
-Write-Host 
-Write-Host
-Write-Host 
-Write-Host
-Write-Host
-Write-Host "                                   The Seinfeld Trivia Game"
-Write-Host 
-Write-Host "             Copyright 2019 - Teo Espero, Cloud and Systems Administration (BS)"
+Write-Host "`n`n`n`n`n`n"
+Write-Host "                                   The Seinfeld Trivia Game`n"
+Write-Host "             Copyright 2019 - Teo Espero, Cloud and Systems Administration (BS)`n"
 Write-Host "                                   Western Governors University"
-Write-Host
-Write-Host
-Write-Host
-Write-Host
-Write-Host
-Write-Host
-Write-Host
-Write-Host 
+Write-Host "`n`n`n`n`n`n`n" 
 
-## create a 5-second delay before returning the player to the command shell
+## create a 3-second delay before returning the player to the command shell
 
 Start-Sleep -Seconds 3
 
