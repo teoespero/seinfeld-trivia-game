@@ -1,0 +1,2 @@
+# seinfeld-trivia-game
+The development of this game will demonstrate how to create an interactive online quiz that presents the player with a series of questions that are then analyzed and graded. The primary point of focus for you as you create this game should be on the use of variables to store and interrogate data collected from the player. In addition, you should take note of the use of Windows PowerShell escape characters in the generation of display output.
